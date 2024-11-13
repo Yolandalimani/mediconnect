@@ -1,0 +1,14 @@
+{
+  "name": "mediconnect",
+  "private": true,
+  "workspaces": [
+    "client",
+    "backend"
+  ],
+  "scripts": {
+    "start": "concurrently \"npm:start --workspace=client\" \"npm:dev --workspace=backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
